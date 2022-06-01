@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="#">
-        <img class="navigation-logo-page-header" alt="Логотип Седона»." src="">
+        <img class="navigation-logo-page-header" src="/images-sedona/header/logo-sedona.svg" width="139" height="70" alt="Логотип Седона».">
       </a>
       <ul class="navigation-list">
         <li class="navigation-list-item">
@@ -52,9 +53,7 @@
   </header>
   <main class="main">
     <div class="main-logo">
-      <img class="main-logo-Welcome" src="" alt="Логотип-Welcome">
-      <img class="main-logo-gorgeous" src="" alt="Логотип-to-the-gorgeous">
-      <img class="main-logo-Sedona" src="" alt="Логотип-Sedona">
+      <img class="main-logo-welcome" src="/images-sedona/index-images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону!">
     </div>
     <h1 class="main-header">
       СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
@@ -77,10 +76,11 @@
         </p>
       </div>
       <div class="advantages-pictures">
-        <img class="advantages-pictures-city" src="" alt="город">
+        <img class="advantages-pictures-city" src="/images-sedona/index-images/advantages/city.jpg" width="800" height="384" alt="город">
       </div>
       <div class="advantage-comfort">
-        <img class="advantage-comfort-home" src="" alt="дом">
+        <div class="advantage-comfort-home">
+        </div>
         <h3 class="advantages-comfort-needs">
           ЖИЛЬЕ
         </h3>
@@ -89,20 +89,22 @@
         </p>
       </div>
       <div class="advantage-comfort">
-        <img class="advantage-comfort-burger" src="" alt="бургер">
+        <div class="advantage-comfort-burger">
+        </div>
         <h3 class="advantages-comfort-needs">ЕДА</h3>
         <p class="advantages-comfort-neds-description">
           Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
         </p>
       </div>
       <div class="advantage-comfort">
-        <img class="advantage-comfort-present" src="" alt="подарок">
+        <div class="advantage-comfort-present">
+        </div>
         <h3 class="advantages-comfort-needs">СУВЕНИРЫ</h3>
         <p class="advantages-comfort-neds-description">
           Не только китайского, но и настоящего местного производства!
         </p>
         <div class="advantages-pictures">
-          <img class="advantages-pictures-canyon" src="" alt="Каньон">
+          <img class="advantages-pictures-canyon" src="/images-sedona/index-images/advantages/canyon.jpg" width="800" height="384" alt="Гранд каньон">
         </div>
       </div>
       <div class="advantages-place">
@@ -134,30 +136,28 @@
       ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
     </a>
   </section>
-  <footer class="page-footer">
-    <section class="page-footer-mailing">
-      <h2 class="footer-mailing">
+  <footer class="footer">
+    <section class="mailing">
+      <h2 class="mailing-header">
         ПОДПИШИТЕСЬ НА РАССЫЛКУ
       </h2>
-      <p class="footer-info">
+      <p class="mailing-info">
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
-      <form class="mailing" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="mailing-email">
           Ваш e-mail
         </label>
-        <input class="field" placeholder="email@example.com" type="email" name="mailing-email" id="mailing-email"
+        <input class="mailing-field" placeholder="email@example.com" type="email" name="mailing-email" id="mailing-email"
           required>
-        <button class="button-mailing-button" type="submit">
-          <span class="visually-hidden">
+        <button class="mailing-button" type="submit">
             Подписаться
-          </span>
         </button>
       </form>
     </section>
-    <nav class="footer-social-network">
-      <ul class="footer-social-network-itom">
-        <li class="social-network-item">
+    <nav class="navigation-footer">
+      <ul class="footer-social-network">
+        <li class="footer-social-network-item">
           <a class="button-vkontakte" href="https://vk.com/htmlacademy.ru" title="Вконтакте">
             <span class="visually-hidden">
               Вконтакте
@@ -186,7 +186,6 @@
       </div>
       <div class="footer-logo">
         <a class="footer-lolo-academy" href="https://htmlacademy.ru">
-          <img class="logo-footer" src="" alt="Логотип Академии">
         </a>
       </div>
     </nav>
