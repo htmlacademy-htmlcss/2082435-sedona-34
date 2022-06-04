@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+  body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #FFFFFF;
+    text-align: center;
+  }
+  .page-header {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #ffffff;
+  }
+  .navigation-list-link {
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+  }
+  .navigation-use-search {
+    background-image: url("../images-sedona/header/search.svg");
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+  }
+  .navigation-use-favorite {
+    background-image: url("../images-sedona/header/favorite.svg");
+    width: 18px;
+    height: 17px;
+    background-repeat: no-repeat;
+  }
+  .navigation-use-button {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #756157;
+    text-decoration: none;
+    text-transform: uppercase; 
+  }
+  .main-logo {
+    background-image: url("../images-sedona/index-images/index-background.jpg");
+    background-size: 100% auto;
+    Height: 485px;
+    background-repeat: no-repeat;
+    background-color: #87CEEB;
+  }
+  .main-logo-welcome {
+  top: 51px;
+  bottom: 82px;
+}
+/*
+  .conteiner-edge {
+    background-image: url("../images-sedona/index-images/under-edge.svg");
+    background-size: 100% auto;
+    Height: 57px;
+    background-repeat: no-repeat;
+  }
+*/
+.main-header {
+font-family: 'PT Sans', sans-serif;
+font-size: 30px;
+line-height: 36px;
+font-weight: 700;
+text-transform: uppercase;
+}
+.main-text {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages-place-heading {
+font-size: 24px;
+line-height: 28px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.advantages-comfort-needs {
+font-size: 24px;
+line-height: 28px;
+font-weight: 700;
+text-transform: uppercase;
+}
+.advantages-comfort-home {
+  background-image: url("../images-sedona/index-images/advantages/home.svg");
+  width: 75px;
+  height: 72px;
+  background-repeat: no-repeat;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.advantages-comfort-burger {
+  background-image: url("../images-sedona/index-images/advantages/food.svg");
+  width: 75px;
+  height: 72px;
+  background-repeat: no-repeat;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.advantages-comfort-present {
+  background-image: url("../images-sedona/index-images/advantages/present.svg");
+  width: 75px;
+  height: 72px;
+  background-repeat: no-repeat;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.interest{
+text-align: center;
+}
+.interest-heading {
+  text-transform: uppercase; 
+  font-weight: 700;
+  width: 30px;
+  height: 36px;
+}
+.interest-text {
+  width: 22px;
+  height: 26px;
+ }
+ .interest-button-search-hotei-in-Sedona { 
+  width: 20px;
+  height: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase; 
+}
+.mailing{ 
+  background-image: url("../images-sedona/index-images/background-mailing.jpg");
+  background-size: 100% auto;
+  Height: 411px;
+  background-repeat: no-repeat;
+  background-color: #87CEEB;
+  color: #ffffff;
+}
+.mailing-header{
+  font-weight: 700;
+  width: 30px;
+  height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.mailing-info{
+  width: 22px;
+  height: 36px;
+  text-align: center;
+}
+.mailing-button{
+  width: 20px;
+  height: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #87CEEB;
+  text-decoration: none;
+  text-transform: uppercase; 
+  text-align: center;
+}
