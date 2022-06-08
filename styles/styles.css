@@ -12,7 +12,14 @@
     src: url("fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
   }
+  .html {
+    height: 100%;
+  }
   body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -20,11 +27,35 @@
     color: #000000;
     background-color: #FFFFFF;
     text-align: center;
+    outline: 5px solid red;
+    outline-offset: -5px;
+    width: 1200px;
   }
   .page-header {
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
+  }
+  .navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+  }
+  .navigation-logo {
+    width: 139px;
+    margin-left: 70px;
+    margin-right: 30px;
+  }
+  .navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 390px;
+  }
+  .navigation-use {
+    margin: 0;
+    padding: 0;
+    width: 264px;
+    margin-left: auto;
   }
   .navigation-list-link {
     font-weight: 700;
@@ -63,6 +94,7 @@
   .main-logo-welcome {
   margin-top: 51px;
   margin-bottom: 82px;
+
 }
 /*
   .conteiner-edge {
@@ -77,12 +109,19 @@ font-size: 30px;
 line-height: 36px;
 font-weight: 700;
 text-transform: uppercase;
+width: 620px;
+height: 72px;
+margin-left: 290px;
+padding: 31px;
 }
 .main-text {
   font-size: 22px;
   line-height: 26px;
 }
-
+.city-container{
+  display: flex;
+  justify-content: space-between;
+}
 .advantages-place-heading {
 font-size: 24px;
 line-height: 28px;
@@ -93,13 +132,20 @@ text-transform: uppercase;
   color: #ffffff;
   background-color: #82B3D3;
 }
+.comfort-container{
+  display: flex;
+  justify-content: space-between;
+}
 .advantages-comfort-needs {
 font-size: 24px;
 line-height: 28px;
 font-weight: 700;
 text-transform: uppercase;
 }
-
+.advantages-comfort{
+  width: 400px;
+  height: 384px;
+}
 .advantages-comfort-image {
   width: 75px;
   height: 72px;
@@ -123,6 +169,14 @@ background: rgba(131, 179, 211, 0.12);
 }
 .place-background{
   background: rgba(131, 179, 211, 0.2);
+}
+.place-container {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-place {
+  width: 400px;
+  height: 384px;
 }
 .interest-heading {
   text-transform: uppercase; 
@@ -209,6 +263,12 @@ line-height: 26px;
   height: 403px;
   background-color: #82B3D3;
 }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+/*catalog*/
 .main-inner-header {
   font-weight: 700;
   font-size: 60px;
@@ -305,4 +365,7 @@ line-height: 26px;
   text-decoration: none;
   background-color: #82B3D3;
   color: #000000;
+}
+.breadcrumbs-container {
+  
 }
