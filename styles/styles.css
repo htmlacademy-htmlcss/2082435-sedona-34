@@ -25,8 +25,6 @@
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
-    color: #000000;
-    background-color: #ffffff;
   }
   .navigation-list-link {
     font-weight: 700;
@@ -58,13 +56,13 @@
   .main-logo {
     background-image: url("../images-sedona/index-images/index-background.jpg");
     background-size: 100% auto;
-    Height: 485px;
+    height: 485px;
     background-repeat: no-repeat;
     background-color: #87CEEB;
   }
   .main-logo-welcome {
-  top: 51px;
-  bottom: 82px;
+  margin-top: 51px;
+  margin-bottom: 82px;
 }
 /*
   .conteiner-edge {
@@ -75,14 +73,12 @@
   }
 */
 .main-header {
-font-family: 'PT Sans', sans-serif;
 font-size: 30px;
 line-height: 36px;
 font-weight: 700;
 text-transform: uppercase;
 }
 .main-text {
-  font-family: 'PT Sans', sans-serif;
   font-size: 22px;
   line-height: 26px;
 }
@@ -93,89 +89,220 @@ line-height: 28px;
 font-weight: 700;
 text-transform: uppercase;
 }
-
+.white {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
 .advantages-comfort-needs {
 font-size: 24px;
 line-height: 28px;
 font-weight: 700;
 text-transform: uppercase;
 }
-.advantages-comfort-home {
+
+.advantages-comfort-image {
+  width: 75px;
+  height: 72px;
+  background-repeat: no-repeat;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.home {
   background-image: url("../images-sedona/index-images/advantages/home.svg");
-  width: 75px;
-  height: 72px;
-  background-repeat: no-repeat;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
-.advantages-comfort-burger {
+
+.burger {
   background-image: url("../images-sedona/index-images/advantages/food.svg");
-  width: 75px;
-  height: 72px;
-  background-repeat: no-repeat;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
-.advantages-comfort-present {
+.present {
   background-image: url("../images-sedona/index-images/advantages/present.svg");
-  width: 75px;
-  height: 72px;
-  background-repeat: no-repeat;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
-.interest{
-text-align: center;
+.comfort-background {
+background: rgba(131, 179, 211, 0.12);
+}
+.place-background{
+  background: rgba(131, 179, 211, 0.2);
 }
 .interest-heading {
   text-transform: uppercase; 
   font-weight: 700;
-  width: 30px;
-  height: 36px;
+font-size: 30px;
+line-height: 36px;
 }
 .interest-text {
-  width: 22px;
-  height: 26px;
+font-size: 22px;
+line-height: 26px;
  }
  .interest-button-search-hotei-in-Sedona { 
-  width: 20px;
-  height: 36px;
+  font-size: 20px;
+  line-height: 36px;
   font-weight: 700;
   color: #FFFFFF;
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase; 
 }
-.mailing{ 
+.index { 
   background-image: url("../images-sedona/index-images/background-mailing.jpg");
   background-size: 100% auto;
-  Height: 411px;
+  height: 411px;
   background-repeat: no-repeat;
   background-color: #87CEEB;
   color: #ffffff;
+  text-align: center;
 }
 .mailing-header{
   font-weight: 700;
-  width: 30px;
-  height: 36px;
+  font-size: 30px;
+  line-height: 36px;
   text-transform: uppercase;
   text-align: center;
 }
 .mailing-info{
-  width: 22px;
-  height: 36px;
+  font-size: 22px;
+  line-height: 36px;
   text-align: center;
 }
 .mailing-button{
-  width: 20px;
-  height: 36px;
+  font-size: 20px;
+  line-height: 36px;
   font-weight: 700;
   color: #FFFFFF;
   background-color: #87CEEB;
   text-decoration: none;
   text-transform: uppercase; 
   text-align: center;
+}
+.footer-social-network-item {
+  width: 24px;
+  height: 14px;
+  background-repeat: no-repeat;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.vkontakte {
+  background-image: url("../images-sedona/footer/vk.svg");
+}
+.telegram {
+  background-image: url("../images-sedona/footer/telegram.svg");
+}
+.youtube {
+  background-image: url("../images-sedona/footer/youtube.svg");
+}
+.contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+}
+.footer-logo {
+  background-image: url("../images-sedona/footer/academy.svg");
+  width: 115px;
+  height: 33px;
+}
+.main-inner {
+  background-image: url("../images-sedona/catalog-images/filter-backround.jpg");
+  width: 1200px;
+  height: 403px;
+  background-color: #82B3D3;
+}
+.main-inner-header {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+}
+.home-main {
+  background-image: url("../images-sedona/catalog-images/logo-home.svg");
+  width: 12px;
+  height: 12px;
+}
+.symbol {
+  background-image: url("../images-sedona/catalog-images/simbol.svg");
+  width: 5px;
+  height: 8px;
+}
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.infrastructure-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.infrastructure-filter-control {
+  color: #ffffff;
+}
+.button-filters-apply {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+.button-filters-reset {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.main-header-quantity {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+.hotel-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.hotel-button-detailed {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #756157;
+}
+.hotel-button-to-like {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+.hotel-button-in-like {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #7DB54F;
+}
+.hotel-rate {
+  font-size: 16px;
+  line-height: 20px;
+}
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  background-color: #82B3D3;
+  color: #000000;
+}
+.pagination-link-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  background-color: #82B3D3;
+  color: #000000;
 }
