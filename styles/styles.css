@@ -38,6 +38,7 @@ body {
   min-height: 100%;
   background-color: #E5E5E5;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -48,11 +49,13 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .conteiner {
   margin: 0 auto;
   width: 1200px;
   background-color: #ffffff;
 }
+
 .page-header {
   font-size: 20px;
   line-height: 26px;
@@ -68,10 +71,12 @@ body {
 .navigation-logo {
   margin-right: 139px;
 }
+
 .navigation-logo-page-header {
-position: absolute;
-z-index: 2;
+  position: absolute;
+  z-index: 2;
 }
+
 .navigation-list {
   margin: 0;
   padding: 0;
@@ -97,9 +102,11 @@ z-index: 2;
   color: #000000;
   background-color: #ffffff;
 }
+
 .navigation-use-item {
-margin: 24px;
+  margin: 24px;
 }
+
 .search {
   background-image: url("../images-sedona/header/search.svg");
   width: 18px;
@@ -127,9 +134,11 @@ margin: 24px;
   margin: 14px 0px 14px;
   width: 130px;
 }
+
 .main {
   flex-grow: 2;
 }
+
 .main-logo {
   background-image: url("../images-sedona/index-images/index-background.jpg");
   background-size: 100% auto;
@@ -175,12 +184,15 @@ margin: 24px;
   display: flex;
   flex-wrap: wrap;
 }
+
 .advantages-pictures-city {
   display: block;
 }
+
 .advantages-pictures-canyon {
   display: block;
 }
+
 .advantages-place-heading {
   font-size: 24px;
   line-height: 28px;
@@ -238,10 +250,12 @@ margin: 24px;
   width: 400px;
   height: 384px;
 }
+
 .interest {
   display: block;
   padding: 91px 0 93px;
 }
+
 .interest-heading {
   text-transform: uppercase;
   font-weight: 700;
@@ -269,6 +283,7 @@ margin: 24px;
   border: #756157;
   padding: 12px 15px;
 }
+
 .mailing {
   display: block;
   height: 411px;
@@ -301,7 +316,7 @@ margin: 24px;
   line-height: 36px;
   text-align: center;
   width: 500px;
-  margin:0 auto 46px;
+  margin: 0 auto 46px;
 }
 
 .mailing-button {
@@ -315,9 +330,11 @@ margin: 24px;
   text-align: center;
   margin: 0 auto;
 }
+
 .footer-social-network {
   display: flex;
 }
+
 .footer-social-network-item {
   width: 24px;
   height: 14px;
@@ -352,9 +369,11 @@ margin: 24px;
   width: 115px;
   height: 33px;
 }
-.navigation-footer{
+
+.navigation-footer {
   height: 120px;
 }
+
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -362,7 +381,7 @@ margin: 24px;
   height: 50px;
   margin: 40px auto 30px;
   text-align: center;
-  
+
 }
 
 /*catalog*/
@@ -372,23 +391,27 @@ margin: 24px;
   background-color: #82B3D3;
   background-repeat: no-repeat;
 }
+
 .main-inner-header {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
 }
+
 .breadcrumbs {
   display: flex;
   justify-content: space-between;
   width: 120px;
-  }
+}
+
 .home-main {
   background-image: url("../images-sedona/catalog-images/logo-home.svg");
   width: 12px;
   height: 12px;
   margin-right: 10px;
 }
+
 .symbol {
   background-image: url("../images-sedona/catalog-images/simbol.svg");
   width: 5px;
@@ -403,6 +426,7 @@ margin: 24px;
   text-decoration: none;
 
 }
+
 .infrastructure-form {
   display: flex;
   justify-content: space-between;
@@ -411,6 +435,7 @@ margin: 24px;
   text-align: center;
   padding: 0 70px 0;
 }
+
 .infrastructure-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -479,10 +504,12 @@ margin: 24px;
   font-size: 16px;
   line-height: 20px;
 }
+
 .pagination {
   display: flex;
   list-style-type: none;
 }
+
 .pagination-link {
   font-weight: 700;
   font-size: 20px;
@@ -500,32 +527,37 @@ margin: 24px;
   background-color: #82B3D3;
   color: #000000;
 }
+
 .button-card {
   background-image: url("../images-sedona/catalog-images/icon-table.svg");
   width: 16px;
   height: 14px;
   background-repeat: no-repeat;
 }
+
 .button-sly {
   background-image: url("../images-sedona/catalog-images/icon-slideshow.svg");
   width: 16px;
   height: 14px;
   background-repeat: no-repeat;
 }
+
 .button-list {
   background-image: url("../images-sedona/catalog-images/icon-list.svg");
   width: 16px;
   height: 14px;
   background-repeat: no-repeat;
 }
+
 .hotel-results {
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
   padding: 0 72px 0;
 }
+
 .hotel {
-width: 340px;
-height: 438px;
-padding: ;
+  width: 340px;
+  height: 438px;
+  padding: ;
 }
