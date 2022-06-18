@@ -118,6 +118,21 @@
                 </li>
               </ul>
             </fieldset>
+
+            <section class="prise-filter">
+              <h3 class="prise-title">Стоимость, ₽:</h3>
+              
+              <form class="prise-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <label class="visually-hidden" for="before">от</label>
+                  <input class="field"  placeholder="от" type="prise" name="prise-before" id="before" value="0">
+                  <label class="visually-hidden" for="before">до</label>
+                  <input class="field"  placeholder="до" type="prise" name="prise-before" id="before" value="9000">
+              </form>
+            </section>
+            <div class="range">
+              <input type="range" min="1" max="9000" steps="1" value="7500">
+            </div>
+
             <button class="button-filters-apply" type="submit">Применить</button>
             <button class="button-filters-reset" type="reset">Сбросить</button>
           </form>
@@ -260,7 +275,6 @@
         </form>
       </section>
       <nav class="navigation-footer">
-        <div class="footer-container">
           <ul class="footer-social-network">
             <li class="footer-social-network-item vkontakte">
               <a class="footer-social-network-button" href="https://vk.com/htmlacademy.ru" title="Вконтакте">
@@ -293,7 +307,6 @@
             <a class="footer-logo-academy" href="https://htmlacademy.ru">
             </a>
           </div>
-        </div>
       </nav>
     </footer>
   </div>
