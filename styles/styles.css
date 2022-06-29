@@ -81,7 +81,6 @@ body {
 
 .navigation-logo-page-header {
   position: absolute;
-  z-index: 2;
   left: 0;
   top: 0;
 }
@@ -99,6 +98,7 @@ body {
   margin-left: auto;
   display: flex;
   list-style-type: none;
+  align-items: center;
 }
 
 .navigation-list-item {
@@ -113,19 +113,23 @@ body {
 }
 
 .navigation-use-item {
-  margin: 24px 24px 24px 0;
+  margin-right : 24px;
 }
-
+.navigation-use-icon {
+  width: 20px;
+  height: 18px;
+  display: block;
+}
 .search {
   background-image: url("../images-sedona/header/search.svg");
-  width: 18px;
+  width: 20px;
   height: 18px;
   background-repeat: no-repeat;
 }
 
 .favorite {
   background-image: url("../images-sedona/header/favorite.svg");
-  width: 18px;
+  width: 20px;
   height: 17px;
   background-repeat: no-repeat;
 }
@@ -150,27 +154,28 @@ body {
 
 .main-logo {
   background-image: url("../images-sedona/index-images/index-background.jpg");
-  background-size: 100% auto;
+  background-size: 1200px auto;
   height: 485px;
   background-repeat: no-repeat;
   background-color: #87CEEB;
-  margin-bottom: 63px;
+  position: relative;
 }
 
 .main-logo-welcome {
   margin-top: 51px;
-  margin-bottom: 82px;
+  margin-bottom: 26px;
 
 }
-
-/*
-  .conteiner-edge {
-    background-image: url("../images-sedona/index-images/under-edge.svg");
-    background-size: 100% auto;
-    Height: 57px;
-    background-repeat: no-repeat;
+.conteiner-edge {
+  background-image: url("../images-sedona/index-images/under-edge.svg");
+  height: 57px;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 1200px;
   }
-*/
+.main-box {
+  padding: 63px 0 90px ;
+}
 .main-title {
   font-size: 30px;
   line-height: 36px;
@@ -184,20 +189,15 @@ body {
 .main-subtitle {
   font-size: 22px;
   line-height: 26px;
-  margin: 0 auto 90px;
+  margin: 0 auto;
   width: 750px;
 }
-.advantages-container {
+.advantages {
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
 }
-.advantages-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0 85px;
-}
+
 .advantages-pictures-city {
   display: block;
 }
@@ -205,7 +205,12 @@ body {
 .advantages-pictures-canyon {
   display: block;
 }
-
+.advantages-place-number {
+margin-bottom: 30px;
+}
+.advantages-place-description {
+margin: 0;
+}
 .advantages-place-heading {
   font-size: 24px;
   line-height: 28px;
@@ -215,9 +220,12 @@ body {
   margin-bottom: 30px;
 }
 
-.white {
+
+.town-bridge {
   color: #ffffff;
   background-color: #82B3D3;
+  padding: 92px 92px;
+
 }
 
 .advantages-comfort-needs {
@@ -225,19 +233,29 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
 }
-
+.advantages-comfort-neds-description {
+  margin: 0;
+}
 .advantages-comfort {
   width: 400px;
   height: 384px;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  padding: 70px 85px 75px;
 }
 .advantages-place {
   width: 400px;
   height: 384px;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  padding: 103px 102px;
 }
 .advantages-comfort-image {
   width: 75px;
@@ -246,7 +264,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .home {
@@ -300,6 +318,9 @@ body {
   text-transform: uppercase;
   border: #756157;
   padding: 12px 15px;
+  display: block;
+  width: 574px;
+  margin: auto;
 }
 
 .mailing {
@@ -364,7 +385,11 @@ body {
   background-repeat: no-repeat;
   display: block;
 }
-
+.footer-social-network-button {
+  width: 24px;
+  height: 17px;
+  display: block;
+}
 .vkontakte {
   background-image: url("../images-sedona/footer/vk.svg");
 }
@@ -389,13 +414,17 @@ body {
   width: 115px;
   height: 33px;
 }
-
+.footer-logo-academy {
+  display: block;
+  width: 115px;
+  height: 33px;
+}
 .navigation-footer {
   display: flex;
   justify-content: space-between;
-  width: 1060px;
   margin: 0 auto;
-padding: 40px 0 30px;
+padding: 40px 70px 30px;
+
 }
 
 
@@ -499,8 +528,15 @@ padding: 40px 0 30px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
+  width: 300px;
 }
-
+.hotel-box { 
+  padding: 20px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
 .hotel-button-detailed {
   font-weight: 700;
   font-size: 16px;
