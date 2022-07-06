@@ -120,16 +120,25 @@
                 </li>
               </ul>
             </fieldset>
+
+
             <fieldset class="prise-filter">
               <legend class="prise-title">Стоимость, ₽:</legend>
-              <div class="range">
-                <div class="range-window">
 
-                </div>
+              <div class="range">
+                  <label class="range-label">
+                  <input class="range-input" type="number" value="0" placeholder="от" name="min-price"> 
+                </label>
+               
+                <label class="range-label">
+                <input class="range-input" type="number" value="9000" placeholder="до" name="max-price"> 
+                </label>
+              </div>
+
               <div class="range-line">
                 <span class="line"></span>
-                <button class="button-range"></button>
-                <button class="button-range"></button>
+                <button type="button" class="button-range"></button>
+                <button type="button" class="button-range"></button>
               </div>
             </fieldset>
             <div class="buttons">
@@ -139,9 +148,6 @@
           </form>
       </div>
       </section>
-
-
-
       <div class="hotels-found">
         <h2 class="main-header-quantity">Найдено гостиниц: 38</h2>
         <select class="select-control-hotels" aria-label="Сортировка гостинниц">

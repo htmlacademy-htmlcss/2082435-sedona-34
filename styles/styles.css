@@ -561,6 +561,7 @@ padding-top: 3px;
 }
 .prise-filter {
   margin-right: 70px;
+  border: none;
 }
 
 .prise-title {
@@ -571,6 +572,28 @@ padding-top: 3px;
   margin: 0 0 34px 0;
   text-align: start;
 }
+.range {
+  display: flex;
+  margin-bottom: 20px;
+}
+.range-label {
+border: #ffffff;
+border-radius: 4px;
+}
+.range-input {
+  width: 144px;
+font:inherit;
+padding: 0;
+color: #ffffff;
+background-color: transparent;
+border: 2px;
+border-color: white;
+padding: 14px 5px 14px 20px;
+box-sizing: border-box;
+}
+.range-line {
+  position: relative;
+}
 .line {
 position: absolute;
 height: 4px;
@@ -579,20 +602,18 @@ background-color: #ffffff;
 left: 0;
 
 }
-.buuton-range {
+.buton-range {
   border: none;
   width: 20px;
   height: 20px;
   border-radius: 5px;
-  position: relative;
+  position: absolute;
+  display: block;
 }
 .field {
   color: #ffffff;
   background-color: #82B3D3;
 }
-
-
-
 .buttons {
   align-self: end;
 }
