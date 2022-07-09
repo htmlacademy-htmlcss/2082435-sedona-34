@@ -6,9 +6,8 @@
   <title>Седона</title>
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
-
 <body>
-  <div class="conteiner">
+  <div class="page-conteiner page-conteiner-flex">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="#">
@@ -224,6 +223,49 @@
       </nav>
     </footer>
   </div> 
+  <div class="appoinment-conteiner">
+  <section class="appoinment">
+  
+ <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+    
+  <div class="appoinment-title-conteiner">
+    <h2 class="appoinment-title">Поиск гостиницы в Седоне</h2>
+    <button class="seach-button-reset" type="reset">
+      <span class="visually-hidden">Сбросить поиск свободной даты</span>
+    </button>
+  </div>
+
+    <p class="field-group appointment-form-date">
+      <label class="form-label" for="appointment-date">Дата заезда:</label>
+      <input class="field field-date" type="text" id="appointment-date" name="appointment-date" placeholder="27 апреля 2020">
+    </p>
+<p class="appoinment-text appoinment-text-past">Мы не можем отправить вас в прошлое</p>
+    <p class="field-group appointment-form-date">
+      <label class="form-label" for="appointment-date-exit">Дата заезда:</label>
+      <input class="field field-date" type="text" id="appointment-date-exit" name="appointment-date" placeholder="1 сентября 2021">
+    </p>
+
+    <p class="appoinment-text">На эти даты есть свободные номера. Пока есть.</p>
+
+   <div class="adults-children-conteiner">
+    <p class="field-group appointment-adults-children">
+      <button class="button-minus"></button>
+      <label class="form-label" for="appointment-adults">Взрослые:</label>
+      <button class="button-plus"></button>
+      <input class="field field-adults-children" type="text" id="appointment-adults" name="appointment-date" placeholder="2">
+    </p>
+    <p class="field-group appointment-adults-children">
+      <label class="form-label" for="appointment-children">Дети:</label>
+      <button class="button-minus"></button>
+      <input class="field field-adults-children" type="number" id="appointment-children" name="appointment-date" placeholder="2">
+      <button class="button-plus"></button>
+    </p>
+    <span class="popup-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+   </div>
+   <button class="button-search blu-button">Найти</button>
+  </form>
+  </section>
+  </div>
 </body>
 
 </html>

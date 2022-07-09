@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
-
 <body>
-  <div class="conteiner">
+  <div class="page-conteiner page-conteiner-flex">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="#">
@@ -62,18 +60,19 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-logo" href="index.html"><span class="visually-hidden">Главная</span>
-              <svg class="breadcrumbs-home" aria-hidden="true" focusable="false" width="12"
-              height="12" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z"/>
-            </svg>
+              <svg class="breadcrumbs-home" aria-hidden="true" focusable="false" width="12" height="12"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z" />
+              </svg>
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <svg class="breadcrumbs-simbol" aria-hidden="true" focusable="false" width="6"
-              height="9" xmlns="http://www.w3.org/2000/svg">
+            <svg class="breadcrumbs-simbol" aria-hidden="true" focusable="false" width="6" height="9"
+              xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M5.05145 4.0749L1.25145 0.674902C1.05145 0.474902 0.651448 0.474902 0.351448 0.674902C0.0514485 0.874902 0.151448 1.2749 0.351448 1.4749L3.65145 4.4749L0.451448 7.4749C0.251448 7.6749 0.251448 8.0749 0.451448 8.2749C0.451448 8.3749 0.751448 8.4749 0.851448 8.4749C0.951449 8.4749 1.15145 8.3749 1.25145 8.2749L5.05145 4.8749C5.35145 4.6749 5.35145 4.2749 5.05145 4.0749Z" fill="white"/>
+                d="M5.05145 4.0749L1.25145 0.674902C1.05145 0.474902 0.651448 0.474902 0.351448 0.674902C0.0514485 0.874902 0.151448 1.2749 0.351448 1.4749L3.65145 4.4749L0.451448 7.4749C0.251448 7.6749 0.251448 8.0749 0.451448 8.2749C0.451448 8.3749 0.751448 8.4749 0.851448 8.4749C0.951449 8.4749 1.15145 8.3749 1.25145 8.2749L5.05145 4.8749C5.35145 4.6749 5.35145 4.2749 5.05145 4.0749Z"
+                fill="white" />
             </svg>
           </li>
           <li class="breadcrumbs-item">
@@ -104,7 +103,6 @@
                 </li>
                 <li class="infrastructure-filter-item">
                   <label class="infrastructure-filter-control">
-
                     <input class="visually-hidden infrastructure-filter-control-input" type="checkbox" name="wi-fi">
                     <span class="control-mark"></span>
                     <span class="control-label">Wi-fi</span>
@@ -143,18 +141,24 @@
             </fieldset>
             <fieldset class="prise-filter">
               <legend class="prise-title">Стоимость, ₽:</legend>
-              <div class="range">
+              <div class="range-conteiner">
                 <div class="range-window">
-                  <label class="range-label left-label">от
-                  </label>
-                  <input class="range-input left-input" type="number" value="0" name="min-price">
-                  <label class="range-label right-label">до
-                  </label>
-                  <input class="range-input right-input" type="number" value="9000" name="max-price">
-                </div>
-                <div class="range-line"></div>
-                <button class="range-button range-button-first " type="button"></button>
-                <button class="range-button range-button-second" type="button"></button>
+                  <div class="range-window-left">
+                    <label class="range-label left-label">от
+                    </label>
+                    <input class="range-input left-input" type="number" value="0" name="min-price">
+                  </div>
+                  <div class="range-window-right">
+                    <label class="range-label right-label">до
+                    </label>
+                    <input class="range-input right-input" type="number" value="9000" name="max-price">
+                  </div>
+                </div>  
+                  <div class="range">
+                    <div class="range-line"></div>
+                    <div class="range-button range-button-first"></div>
+                    <div class="range-button range-button-second"></div>
+                  </div>
               </div>
             </fieldset>
             <div class="buttons">
@@ -164,127 +168,126 @@
           </form>
         </section>
       </div>
-        <div class="hotels-found">
-          <h2 class="main-header-quantity">Найдено гостиниц: 38</h2>
-          <select class="select-control-hotels" aria-label="Сортировка гостинниц">
-            <option value="popular">Сначала популярные</option>
-            <option value="cheapr">Сначала дешёвые</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-          <a class="button-icon card" href="#">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a class="button-icon sly" href="#">
-            <span class="visually-hidden">Слайдшоу</span>
-          </a>
-          <a class="button-icon list" href="#">
-            <span class="visually-hidden">Показать список</span>
-          </a>
-
-        </div>
-        <!--Карточки Гостинниц-->
-        <ul class="hotel-results">
-          <li class="hotel">
-            <img class="hotel-mountains" src="images-sedona/catalog-images/hotels/Amara-hotel.jpg" width="300"
-              height="211" alt="Отель Амара">
-            <h3 class="hotel-name">Amara Resort & Spa</h3>
-            <span class="hotel-appellation">Гостинница</span>
-            <span class="hotel-prise">От 4000 ₽</span>
-            <a class="hotel-button-detailed brown-button" href="#">Подробнее</a>
-            <button class="hotel-button-to-like blu-button" type="button">В избранное</button>
-            <div class="hotel-raiting">
-              <span class="hotel-star"></span>
-              <span class="hotel-star"></span>
-              <span class="hotel-star"></span>
-              <span class="hotel-star"></span>
-            </div>
-            <div class="hotel-rate">
-              Рейтинг 8,5
-            </div>
+      <div class="hotels-found">
+        <h2 class="main-header-quantity">Найдено гостиниц: 38</h2>
+        <select class="select-control-hotels" aria-label="Сортировка гостинниц">
+          <option value="popular">Сначала популярные</option>
+          <option value="cheapr">Сначала дешёвые</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+        <a class="button-icon card" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a class="button-icon sly" href="#">
+          <span class="visually-hidden">Слайдшоу</span>
+        </a>
+        <a class="button-icon list" href="#">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+      </div>
+      <!--Карточки Гостинниц-->
+      <ul class="hotel-results">
+        <li class="hotel">
+          <img class="hotel-mountains" src="images-sedona/catalog-images/hotels/Amara-hotel.jpg" width="300"
+            height="211" alt="Отель Амара">
+          <h3 class="hotel-name">Amara Resort & Spa</h3>
+          <span class="hotel-appellation">Гостинница</span>
+          <span class="hotel-prise">От 4000 ₽</span>
+          <a class="hotel-button-detailed brown-button" href="#">Подробнее</a>
+          <button class="hotel-button-to-like blu-button" type="button">В избранное</button>
+          <div class="hotel-raiting">
+            <span class="hotel-star"></span>
+            <span class="hotel-star"></span>
+            <span class="hotel-star"></span>
+            <span class="hotel-star"></span>
+          </div>
+          <div class="hotel-rate">
+            Рейтинг 8,5
+          </div>
+        </li>
+        <li class="hotel">
+          <img class="hotel-mountains" src="images-sedona/catalog-images/hotels/Villas-hotel.jpg" width="300"
+            height="211" alt="Отель Вилла Диабло">
+          <h3 class="hotel-name">Villas at Poco Diablo</h3>
+          <span class="hotel-appellation">Гостинница</span>
+          <span class="hotel-prise">От 5000 ₽</span>
+          <a class="hotel-button-detailed brown-button" href="#">Подробнее</a>
+          <button class="hotel-button-in-like" type="button">В избранном</button>
+          <div class="hotel-raiting">
+            <span class="hotel-star"></span>
+            <span class="hotel-star"></span>
+            <span class="hotel-star"></span>
+            <span class="hotel-star"></span>
+          </div>
+          <div class="hotel-rate">
+            Рейтинг 9,2
+          </div>
+        </li>
+        <li class="hotel">
+          <img class="hotel-mountains" src="images-sedona/catalog-images/hotels/Desert-hotel.jpg" width="300"
+            height="211" alt="Отель Пустыня">
+          <h3 class="hotel-name">Desert Quail Inn</h3>
+          <span class="hotel-appellation">Гостинница</span>
+          <span class="hotel-prise">От 2500 ₽</span>
+          <a class="hotel-button-detailed brown-button" href="#">Подробнее</a>
+          <button class="hotel-button-to-like blu-button" type="button">В избранное</button>
+          <div class="hotel-raiting">
+            <span class="hotel-star"></span>
+            <span class="hotel-star"></span>
+            <span class="hotel-star"></span>
+          </div>
+          <div class=" hotel-rate">
+            Рейтинг 6,9
+          </div>
+        </li>
+        <li class="hotel">
+          <img class="hotel-mountains" src="images-sedona/catalog-images/hotels/GreenTree-hotel.jpg" width="300"
+            height="211" alt="Отель Зеленое дерево">
+          <h3 class="hotel-name">GreenTree Inn</h3>
+          <span class="hotel-appellation">Гостинница</span>
+          <span class="hotel-prise">От 4000 ₽</span>
+          <a class="hotel-button-detailed brown-button" href="#">Подробнее</a>
+          <button class="hotel-button-to-like blu-button" type="button">В избранное</button>
+          <div class="hotel-raiting">
+            <span class="hotel-star"></span>
+            <span class="hotel-star"></span>
+          </div>
+          <div class="hotel-rate">
+            Рейтинг 5,0
+          </div>
+        </li>
+      </ul>
+      <div class="pagination-box">
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link grey-button" href="#">1</a>
           </li>
-          <li class="hotel">
-            <img class="hotel-mountains" src="images-sedona/catalog-images/hotels/Villas-hotel.jpg" width="300"
-              height="211" alt="Отель Вилла Диабло">
-            <h3 class="hotel-name">Villas at Poco Diablo</h3>
-            <span class="hotel-appellation">Гостинница</span>
-            <span class="hotel-prise">От 5000 ₽</span>
-            <a class="hotel-button-detailed brown-button" href="#">Подробнее</a>
-            <button class="hotel-button-in-like" type="button">В избранном</button>
-            <div class="hotel-raiting">
-              <span class="hotel-star"></span>
-              <span class="hotel-star"></span>
-              <span class="hotel-star"></span>
-              <span class="hotel-star"></span>
-            </div>
-            <div class="hotel-rate">
-              Рейтинг 9,2
-            </div>
+          <li class="pagination-item">
+            <a class="pagination-link blu-button" href="#">2</a>
           </li>
-          <li class="hotel">
-            <img class="hotel-mountains" src="images-sedona/catalog-images/hotels/Desert-hotel.jpg" width="300"
-              height="211" alt="Отель Пустыня">
-            <h3 class="hotel-name">Desert Quail Inn</h3>
-            <span class="hotel-appellation">Гостинница</span>
-            <span class="hotel-prise">От 2500 ₽</span>
-            <a class="hotel-button-detailed brown-button" href="#">Подробнее</a>
-            <button class="hotel-button-to-like blu-button" type="button">В избранное</button>
-            <div class="hotel-raiting">
-              <span class="hotel-star"></span>
-              <span class="hotel-star"></span>
-              <span class="hotel-star"></span>
-            </div>
-            <div class=" hotel-rate">
-              Рейтинг 6,9
-            </div>
+          <li class="pagination-item">
+            <a class="pagination-link blu-button" href="#">3</a>
           </li>
-          <li class="hotel">
-            <img class="hotel-mountains" src="images-sedona/catalog-images/hotels/GreenTree-hotel.jpg" width="300"
-              height="211" alt="Отель Зеленое дерево">
-            <h3 class="hotel-name">GreenTree Inn</h3>
-            <span class="hotel-appellation">Гостинница</span>
-            <span class="hotel-prise">От 4000 ₽</span>
-            <a class="hotel-button-detailed brown-button" href="#">Подробнее</a>
-            <button class="hotel-button-to-like blu-button" type="button">В избранное</button>
-            <div class="hotel-raiting">
-              <span class="hotel-star"></span>
-              <span class="hotel-star"></span>
-            </div>
-            <div class="hotel-rate">
-              Рейтинг 5,0
-            </div>
+          <li class="pagination-item">
+            <a class="pagination-link blu-button" href="#">4</a>
           </li>
+          <li class="pagination-item ">
+            <a class="pagination-link blu-button">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link blu-button" href="#">10</a>
         </ul>
-        <div class="pagination-box">
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link grey-button" href="#">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link blu-button" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link blu-button" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link blu-button" href="#">4</a>
-            </li>
-            <li class="pagination-item ">
-              <a class="pagination-link blu-button">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link blu-button" href="#">10</a>
-          </ul>
-          <p class="hotel-in-page">Гостиниц на странице:</p>
-          <select class="select-control-hotel-list" aria-label="Количество отображаемых гостинниц">
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select>
-        </div>
+        <p class="hotel-in-page">Гостиниц на странице:</p>
+        <select class="select-control-hotel-list" aria-label="Количество отображаемых гостинниц">
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
     </main>
     <footer class="footer">
       <section class="mailing catalog">
@@ -360,5 +363,4 @@
     </footer>
   </div>
 </body>
-
 </html>
