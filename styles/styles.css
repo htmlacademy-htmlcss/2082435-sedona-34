@@ -125,25 +125,16 @@ body {
 .navigation-use-icon {
   background-position: center;
   width: 20px;
-  height: 18px;
+  height: 19px;
   display: block;
   padding: 22px 11px;
   margin: 0;
   outline: none;
-}
-
-.search {
-  background-image: url("../images-sedona/header/search.svg");
-  width: 20px;
-  height: 19px;
   background-repeat: no-repeat;
+  fill: #000000;
 }
 
 .favorite {
-  background-image: url("../images-sedona/header/favorite.svg");
-  width: 20px;
-  height: 19px;
-  background-repeat: no-repeat;
   position: relative;
   margin-right: 20px;
   padding-right: 13px
@@ -277,8 +268,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
 }
 
 .advantages-comfort-needs {
@@ -286,8 +276,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
 }
 
 .advantages-comfort-neds-description {
@@ -347,6 +336,7 @@ body {
 
 .comfort-background {
   background: rgba(131, 179, 211, 0.12);
+  padding: 0 89px;
 }
 
 .place-background {
@@ -372,9 +362,8 @@ body {
   font-size: 22px;
   line-height: 26px;
   padding: 0 100px;
-  margin: 0;
+  margin: 0 0 0 56px;
   font-style: normal;
-  margin-bottom: 56px;
 }
 
 .interest-button-search-hotei-in-Sedona {
@@ -385,7 +374,6 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
-  border: #756157;
   padding: 12px 15px;
   display: block;
   width: 574px;
@@ -428,15 +416,14 @@ body {
 }
 
 .mailing-form {
-  margin: 0 auto;
+  margin: 0 auto 54px;
   display: flex;
   width: 800px;
-  margin-bottom: 54px;
 }
 
 .mailing-field {
   padding: 20px 100px 19px 22px;
-  border-radius: 4px 0 0 4px;
+  border-radius: 10px 0 0 10px;
   border: none;
   font: inherit;
   width: 600px;
@@ -460,7 +447,7 @@ body {
   border: 0;
   padding: 12px 15px;
   min-width: 200px;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 10px 10px 0;
   outline: none;
 }
 
@@ -543,6 +530,7 @@ body {
 
 .breadcrumbs-item:not(:last-child) {
   margin-right: 25px;
+  position: relative;
 }
 
 .breadcrumbs-home {
@@ -554,14 +542,14 @@ body {
   position: relative;
 }
 
-.breadcrumbs-logo::before {
+.breadcrumbs-item:not(:last-child)::before {
   background-image: url("../images-sedona/catalog-images/simbol.svg");
   width: 5px;
   height: 9px;
   position: absolute;
   content: "";
   background-repeat: no-repeat;
-  bottom: 7px;
+  bottom: 6px;
   left: 23px;
   outline: none;
 }
@@ -717,7 +705,7 @@ body {
   z-index: 2;
   padding: 14px 0 14px;
   right: 19px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
@@ -747,7 +735,6 @@ body {
   font: inherit;
   color: #ffffff;
   background-color: transparent;
-  border: none;
   padding: 13px 39px 9px 17px;
   border: 2px solid #ffffff;
   box-sizing: border-box;
@@ -815,7 +802,7 @@ body {
 }
 
 .button-filters-apply {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
@@ -831,7 +818,7 @@ body {
 }
 
 .button-filters-reset {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -852,7 +839,6 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  align-self: start;
   margin: 0 191px 0 0;
   align-self: center;
 }
@@ -871,7 +857,7 @@ body {
   padding: 0 18px;
   background-position: right 17px center;
   background-repeat: no-repeat;
-  background-image: url(../images-sedona/catalog-images/select.svg);
+  background-image: url("../images-sedona/catalog-images/select.svg");
 }
 
 .button-icon {
@@ -914,9 +900,8 @@ body {
   flex-wrap: wrap;
   padding: 0 74px 0;
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 96px 0;
   position: relative;
-  margin-bottom: 96px;
 }
 
 .hotel-results::after {
@@ -966,7 +951,7 @@ body {
 
 .hotel-button-detailed {
   font-weight: 700;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -982,7 +967,7 @@ body {
 
 .hotel-button-to-like {
   font-weight: 700;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -996,7 +981,7 @@ body {
 }
 
 .hotel-button-in-like {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1080,9 +1065,8 @@ body {
 }
 
 .hotel-in-page {
-  margin: 0;
+  margin: 0 40px 0 0;
   text-align: start;
-  margin-right: 40px;
   padding: 20px 0 17px 0;
 }
 
@@ -1099,10 +1083,6 @@ body {
   text-decoration: none;
   background-color: #82B3D3;
   color: #000000;
-}
-
-.pagination-item {
-  border: 12px 24px;
 }
 
 .hotel-mountains-star {
@@ -1356,10 +1336,8 @@ select:disabled {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
   height: 100%;
-  position: absolute;
   background-color: rgba(242, 242, 242, 0.8);
   display: none;
 }
@@ -1381,11 +1359,10 @@ select:disabled {
 }
 
 .appoinment-title-conteiner {
-  margin: 0;
+  margin: 0 0 63px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 63px;
 }
 
 .appoinment-title {
@@ -1448,7 +1425,6 @@ select:disabled {
 
 .field-adults-children {
   width: 44px;
-  padding: 0;
   border: none;
   background-color: #F2F2F2;
   padding: 15px 0 14px;
