@@ -347,6 +347,7 @@ body {
 
 .comfort-background {
   background: rgba(131, 179, 211, 0.12);
+  padding: 0 89px;
 }
 
 .place-background {
@@ -717,7 +718,7 @@ body {
   z-index: 2;
   padding: 14px 0 14px;
   right: 19px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
@@ -815,7 +816,7 @@ body {
 }
 
 .button-filters-apply {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
@@ -831,7 +832,7 @@ body {
 }
 
 .button-filters-reset {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -966,7 +967,7 @@ body {
 
 .hotel-button-detailed {
   font-weight: 700;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -982,7 +983,7 @@ body {
 
 .hotel-button-to-like {
   font-weight: 700;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -996,7 +997,7 @@ body {
 }
 
 .hotel-button-in-like {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
