@@ -19,7 +19,7 @@
             <a class="navigation-list-link" href="#" title="Переход на главную страницу.">Главная</a>
           </li>
           <li class="navigation-list-item">
-            <a class="navigation-list-link" href="sedona.html" title="Информация о Седоне.">О Седоне</a>
+            <a class="navigation-list-link" href="#" title="Информация о Седоне.">О Седоне</a>
           </li>
           <li class="navigation-list-item">
             <a class="navigation-list-link" href="catalog.html" title="Поиск гостиниц в Седоне.">Гостиницы</a>
@@ -43,7 +43,7 @@
             </a>
           </li>
           <li class="navigation-use-link">
-            <a class="navigation-use-button brown-button" href="catalog.html" title="Поиск гостиниц в Седоне.">Хочу сюда!</a>
+            <a class="navigation-use-button brown-button" href="catalog.html" title="Переход на страницу с выбором гостиницы.">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -173,14 +173,12 @@
         </div>
         <div class="field-group appointment-form-date">
           <label class="form-label" for="appointment-date">Дата Заезда:</label>
-          <input class="field-date" type="text" id="appointment-date" name="appointment-date"
-            placeholder="27 апреля 2020">
+          <input class="field-date" type="text" id="appointment-date" name="appointment-date" placeholder="27 апреля 2020" required>
         </div>
         <p class="appoinment-text appoinment-text-error">Мы не можем отправить вас в прошлое</p>
         <div class="field-group appointment-form-date">
           <label class="form-label" for="appointment-date-exit">Дата Выезда:</label>
-          <input class="field-date" type="text" id="appointment-date-exit" name="appointment-date"
-            placeholder="1 сентября 2021">
+          <input class="field-date" type="text" id="appointment-date-exit" name="appointment-date" placeholder="1 сентября 2021" required>
         </div>
         <p class="appoinment-text appoinment-text-done">На эти даты есть свободные номера. Пока есть.</p>
         <div class="adults-children-conteiner">
@@ -188,7 +186,7 @@
             <label class="form-label" for="appointment-adults">Взрослые:</label>
             <div class="input-buttons">
               <button class="button-adults-children button-minus" type="button"> </button>
-              <input class="field-adults-children" type="number" min="1" id="appointment-adults" name="appointment-date" placeholder="2">
+              <input class="field-adults-children" type="number" min="1" id="appointment-adults" name="appointment-date" placeholder="2" required>
               <button class="button-adults-children button-plus" type="button"></button>
             </div>
           </div>
@@ -202,7 +200,7 @@
             </span> 
             <div class="input-buttons">
               <button class="button-adults-children button-minus" type="button"></button>
-              <input class="field-adults-children" type="number" min="1" id="appointment-children" name="appointment-date" placeholder="1">
+              <input class="field-adults-children" type="number" min="1" id="appointment-children" name="appointment-date" placeholder="1" required>
               <button class="button-adults-children button-plus" type="button"></button>
             </div>
           </div>
