@@ -457,7 +457,7 @@ body {
   align-items: center;
   padding: 0;
   margin: 0;
-  width: 142px;
+  min-width: 142px;
 }
 
 .footer-social-network-item {
@@ -522,7 +522,6 @@ body {
 
 .breadcrumbs {
   display: flex;
-  margin-right: auto;
   list-style-type: none;
   padding: 0;
   margin: 0 0 40px 0;
@@ -1349,7 +1348,7 @@ body {
   height: 100%;
   z-index: 2;
   background-color: rgba(242, 242, 242, 0.8);
-  display: none;
+  
 }
 
 .appoinment {
@@ -1701,4 +1700,11 @@ body {
   position: absolute;
   bottom: 142px;
   right: 119px;
+}
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button,
+.field-adults-children::-webkit-outer-spin-button,
+.field-adults-children::-webkit-inner-spin-button {
+appearance: none;
+margin: 0;
 }
