@@ -162,15 +162,20 @@
       </nav>
     </footer>
   </div>
+
+
+
+
   <div class="modal-conteiner">
     <section class="appoinment">
       <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="appoinment-title-conteiner">
           <h2 class="appoinment-title">Поиск гостиницы в Седоне</h2>
-          <button class="seach-button-reset" type="reset">
+          <button class="search-button-reset" type="reset">
             <span class="visually-hidden">Закрыть</span>
           </button>
         </div>
+
         <p class="field-group appointment-form-date">
           <label class="form-label" for="appointment-date">Дата Заезда:</label>
           <input class="field-date" type="text" id="appointment-date" name="appointment-date"
@@ -188,23 +193,28 @@
             <label class="form-label" for="appointment-adults">Взрослые:</label>
             <div class="input-buttons">
               <button class="button-adults-children button-minus" type="button"> </button>
-              <input class="field-adults-children" type="text" id="appointment-adults" name="appointment-date"
+              <input class="field-adults-children" type="number" min="1" id="appointment-adults" name="appointment-date"
                 placeholder="2">
               <button class="button-adults-children button-plus" type="button"></button>
             </div>
           </div>
           <div class="field-group-children appointment-adults-children">
             <label class="form-label label-children" for="appointment-children">Дети:</label>
-            <span class="tooltip-text" role="tooltip" id="tooltip">Укажите количество детей, которые будут с вами,возраст которых от 6 до 18 лет. Дети до 6 лет размещаютсябесплатно.</span>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button" aria-describedby="tooltip-label">
+                <svg aria-hidden="true" focusable="false" width="1" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#ffffff"><path d="M0 9h1V3H0v6Zm1-9H0v1h1V0Z"/></g><defs><clipPath id="a"><path fill="#ffffff" d="M0 0h1v9H0z"/></clipPath></defs></svg>
+              </button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </span> 
             <div class="input-buttons">
               <button class="button-adults-children button-minus" type="button"></button>
-              <input class="field-adults-children" type="number" id="appointment-children" name="appointment-date"
+              <input class="field-adults-children" type="number" min="1" id="appointment-children" name="appointment-date"
                 placeholder="1">
               <button class="button-adults-children button-plus" type="button"></button>
             </div>
           </div>
         </div>
-        <button class="button-search blu-button">Найти</button>
+        <button class="button-search">Найти</button>
       </form>
     </section>
   </div>

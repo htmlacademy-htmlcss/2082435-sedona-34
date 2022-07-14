@@ -195,6 +195,7 @@ body {
   background-color: #87CEEB;
   position: relative;
   margin-bottom: 62px;
+  background-size: cover;
 }
 
 .main-logo::after {
@@ -362,7 +363,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   padding: 0 100px;
-  margin: 0 0 0 56px;
+  margin: 0 0 56px 0;
   font-style: normal;
 }
 
@@ -396,6 +397,7 @@ body {
   background-color: #87CEEB;
   color: #ffffff;
   text-align: center;
+  background-size: cover;
 }
 
 .mailing-header {
@@ -508,6 +510,7 @@ body {
   background-color: #82B3D3;
   background-repeat: no-repeat;
   padding: 35px 70px 54px;
+  background-size: cover;
 }
 
 .main-inner-header {
@@ -1338,8 +1341,8 @@ select:disabled {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 2;
   background-color: rgba(242, 242, 242, 0.8);
-  display: none;
 }
 
 .appoinment {
@@ -1348,7 +1351,9 @@ select:disabled {
   background-color: #ffffff;
   border-radius: 30px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-  padding: 62px 70px 70px 70px;
+  padding: 54px 70px 70px 70px;
+  box-sizing: border-box;
+  width: 715px;
 }
 
 .field-date::placeholder {
@@ -1359,7 +1364,7 @@ select:disabled {
 }
 
 .appoinment-title-conteiner {
-  margin: 0 0 63px 0;
+  margin: 0 0 56px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1374,18 +1379,18 @@ select:disabled {
   padding: 0;
 }
 
-.seach-button-reset {
+.search-button-reset {
   border-radius: 50%;
   width: 53px;
   height: 53px;
   border: none;
   background-color: #f2f2f2;
   position: relative;
+  outline: none;
 }
 
-/*крестик*/
-.seach-button-reset::before,
-.seach-button-reset::after {
+.search-button-reset::before,
+.search-button-reset::after {
   position: absolute;
   top: 25px;
   left: 19px;
@@ -1395,19 +1400,29 @@ select:disabled {
   content: "";
 }
 
-.seach-button-reset::before {
+.search-button-reset::before {
   transform: rotate(45deg);
 }
 
-.seach-button-reset::after {
+.search-button-reset::after {
   transform: rotate(-45deg);
+}
+
+.search-button-reset:focus {
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.search-button-reset:active::before,
+.search-button-reset:active::after {
+  background-color: #000000;
+  opacity: 0.3;
 }
 
 .field-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
+  margin: 0 0 7px 0;
 }
 
 .form-label {
@@ -1424,10 +1439,12 @@ select:disabled {
 
 
 .field-adults-children {
-  width: 44px;
+  width: 29px;
   border: none;
   background-color: #F2F2F2;
-  padding: 15px 0 14px;
+  padding: 17px 0px 17px 4px;
+  font-family: "PT Sans", sans-serif;
+  outline: none;
 }
 
 .field-adults-children::placeholder {
@@ -1440,7 +1457,7 @@ select:disabled {
 }
 
 .appoinment-text {
-  margin: 0;
+  margin: 0 0 11px 0;
   padding: 0;
   font-weight: 400;
   font-size: 16px;
@@ -1469,6 +1486,31 @@ select:disabled {
   box-sizing: border-box;
   border: none;
   padding: 3px 100px 3px 19px;
+  font-family: "PT Sans", sans-serif;
+  outline: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.field-date:hover {
+  background-color: #E6E6E6;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.field-date:focus {
+  background-color: #E6E6E6;
+  box-shadow: 0 0 0 3px #83B3D3;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.field-date:active {
+  background-color: #E6E6E6;
+  outline: 2px solid #000000;
+  color: #000000;
+}
+
+.field-date:disabled {
+  background-color: #b8b5b5;
+  outline: 2px solid #a6a4a4;
 }
 
 .button-adults-children {
@@ -1486,7 +1528,7 @@ select:disabled {
   border-radius: 4px;
   align-items: center;
   box-sizing: border-box;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .button-minus {
@@ -1565,8 +1607,57 @@ select:disabled {
   position: relative;
 }
 
+.label-children {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  left: 53px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: #83B3D3;
+  display: block;
+  top: 11px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  outline: none;
+}
+.tooltip-toggle:hover,
+.tooltip-toggle:focus {
+background-color: #68A2CA;
+}
+.tooltip-text {
+  box-sizing: border-box;
+  background-color: #333333;
+  color: #ffffff;
+  text-align: start;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 15px 18px 22px 22px;
+  border-radius: 10px;
+  width: 256px;
+  position: absolute;
+  top: 40px;
+  transform: translateX(-50%);
+  display: none;
+  z-index: 1;
+  left: 50%;
+}
+
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
+  display: block;
+}
+
 .button-search {
   text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
@@ -1576,57 +1667,30 @@ select:disabled {
   width: 575px;
   height: 60px;
   box-sizing: border-box;
+  outline: none;
 }
 
-.field-group-children:last-child::before {
-  color: #ffffff;
-  background-color: #83B3D3;
-  width: 25px;
-  height: 25px;
-  left: 53px;
-  top: 12px;
-  border-radius: 50%;
-  position: absolute;
-  text-align: center;
-  box-sizing: border-box;
+.button-search:hover {
+  background-color: #68A2CA;
+}
+
+.button-search:focus {
+  background-color: #68A2CA;
+  box-shadow: 0 0 0 3px #756257;
+}
+
+.button-search:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.tooltip-text::before {
+  border-bottom: 8px solid #333333;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
   content: "";
-}
-
-.label-children {
-  position: relative;
-}
-
-.label-children::before {
   position: absolute;
-  background-image: url("../images-sedona/info.svg");
-  width: 1px;
-  height: 9px;
-  content: "";
-  left: 65px;
-  top: 9px;
-  z-index: 2;
-}
+  bottom: 142px;
+  right: 119px;
 
-.tooltip-text {
-  box-sizing: border-box;
-  background-color: #333333;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  text-transform: none;
-  padding: 15px 18px 18px 22px;
-  border-radius: 10px;
-  width: 256px;
-  position: absolute;
-  top: 45px;
-  transform: translateX(-50%);
-  display: none;
-  visibility: hidden;
-  z-index: 1;
-  left: 50%;
-}
-.field-group-children:last-child:hover::before + .tooltip-text,
-.field-group-children:last-child:focus::before + .tooltip-text {
-  display: block;
 }
