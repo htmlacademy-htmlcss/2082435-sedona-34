@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -67,19 +67,18 @@ body {
   display: block;
   width: 139px;
   height: 65px;
-  margin-right: 47px;
-  outline: none;
+  margin: 0 47px 0 0;
 }
 
 .navigation-logo-page-header {
   position: absolute;
-  left: 0;
-  top: 0;
   z-index: 2;
+  left: 0;
 }
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -94,12 +93,12 @@ body {
   align-items: center;
 }
 
-.navigation-list-item {
+.navigation-list-item:not(:last-child) {
   margin-right: 34px;
 }
 
 .navigation-list-link {
-  padding: 21px 0 16px 0;
+  padding: 21px 0 18px 0;
   display: block;
   font-weight: 700;
   text-decoration: none;
@@ -127,7 +126,7 @@ body {
   width: 20px;
   height: 19px;
   display: block;
-  padding: 22px 11px;
+  padding: 23px 11px;
   margin: 0;
   outline: none;
   background-repeat: no-repeat;
@@ -146,7 +145,7 @@ body {
   width: 20px;
   height: 20px;
   left: 24px;
-  top: 13px;
+  top: 15px;
   border-radius: 10px;
   position: absolute;
   text-align: center;
@@ -188,13 +187,13 @@ body {
 }
 
 .main-logo {
-  background-image: url("../images-sedona/index-images/index-background.jpg");
-  background-size: 1200px auto;
+  background-image: url("../images/index-images/index-background.jpg");
+  background-size: 1200px;
   height: 485px;
   background-repeat: no-repeat;
   background-color: #87CEEB;
   position: relative;
-  margin-bottom: 62px;
+  margin-bottom: 63px;
   background-size: cover;
 }
 
@@ -202,23 +201,23 @@ body {
   content: "";
   background-color: #ffffff;
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   width: 1200px;
   height: 3px;
   left: 0;
 }
 
 .main-logo-welcome {
-  padding: 49px 0 83px 0;
+  padding: 51px 0 50px 0;
 }
 
 .conteiner-edge {
-  background-image: url("../images-sedona/index-images/under-edge.svg");
+  background-image: url("../images/index-images/under-edge.svg");
   height: 57px;
   background-repeat: no-repeat;
   position: absolute;
   width: 1200px;
-  bottom: 2px;
+  bottom: 1px;
 }
 
 .main-box {
@@ -324,15 +323,15 @@ body {
 }
 
 .home {
-  background-image: url("../images-sedona/index-images/advantages/home.svg");
+  background-image: url("../images/index-images/advantages/home.svg");
 }
 
 .burger {
-  background-image: url("../images-sedona/index-images/advantages/food.svg");
+  background-image: url("../images/index-images/advantages/food.svg");
 }
 
 .present {
-  background-image: url("../images-sedona/index-images/advantages/present.svg");
+  background-image: url("../images/index-images/advantages/present.svg");
 }
 
 .comfort-background {
@@ -391,10 +390,10 @@ body {
 }
 
 .index {
-  background-image: url("../images-sedona/index-images/background-mailing.jpg");
-  background-size: 100% auto;
+  background-image: url("../images/index-images/background-mailing.jpg");
+  width: 1200px;
   background-repeat: no-repeat;
-  background-color: #87CEEB;
+  background-color:#859bb1;
   color: #ffffff;
   text-align: center;
   background-size: cover;
@@ -506,8 +505,8 @@ body {
 
 /*catalog*/
 .filter-content-conteiner {
-  background-image: url("../images-sedona/catalog-images/filter-backround.jpg");
-  background-color: #82B3D3;
+  background-image: url("../images/catalog-images/filter-backround.jpg");
+  background-color:#859bb1;
   background-repeat: no-repeat;
   padding: 35px 70px 54px;
   background-size: cover;
@@ -546,7 +545,7 @@ body {
 }
 
 .breadcrumbs-item:not(:last-child)::before {
-  background-image: url("../images-sedona/catalog-images/simbol.svg");
+  background-image: url("../images/catalog-images/simbol.svg");
   width: 5px;
   height: 9px;
   position: absolute;
@@ -634,7 +633,7 @@ body {
 }
 
 .control-input[type="checkbox"]:checked+.control-mark::before {
-  background-image: url(../images-sedona/catalog-images/filter.svg);
+  background-image: url(../images/catalog-images/filter.svg);
   background-repeat: no-repeat;
   width: 10px;
   height: 12px;
@@ -671,6 +670,11 @@ body {
 
 .control-input[type="radio"]:checked:focus+.control-mark {
   box-shadow: 0 0 0 3px #81b3d2;
+}
+.control-input[type="checkbox"]:disabled+.control-mark,
+.control-input[type="radio"]:disabled+.control-mark {
+  box-shadow: 0 0 0 3px #000000;
+  background-color: #F2F2F2;
 }
 
 .prise-filter {
@@ -860,7 +864,7 @@ body {
   padding: 0 18px;
   background-position: right 17px center;
   background-repeat: no-repeat;
-  background-image: url("../images-sedona/catalog-images/select.svg");
+  background-image: url("../images/catalog-images/select.svg");
 }
 
 .button-icon {
@@ -877,21 +881,21 @@ body {
 }
 
 .card {
-  background-image: url("../images-sedona/catalog-images/icon-table.svg");
+  background-image: url("../images/catalog-images/icon-table.svg");
   width: 16px;
   height: 14px;
   background-repeat: no-repeat;
 }
 
 .sly {
-  background-image: url("../images-sedona/catalog-images/icon-slideshow.svg");
+  background-image: url("../images/catalog-images/icon-slideshow.svg");
   width: 16px;
   height: 14px;
   background-repeat: no-repeat;
 }
 
 .list {
-  background-image: url("../images-sedona/catalog-images/icon-list.svg");
+  background-image: url("../images/catalog-images/icon-list.svg");
   width: 16px;
   height: 14px;
   background-repeat: no-repeat;
@@ -981,6 +985,7 @@ body {
   border: 0;
   border-radius: 4px;
   outline: none;
+  min-width: 110px;
 }
 
 .hotel-button-in-like {
@@ -1006,7 +1011,7 @@ body {
 }
 
 .hotel-star {
-  background-image: url("../images-sedona/catalog-images/star.svg");
+  background-image: url("../images/catalog-images/star.svg");
   width: 18px;
   height: 17px;
   background-repeat: no-repeat;
@@ -1040,7 +1045,11 @@ body {
   padding: 0;
   margin: 0 250px 0 0;
 }
-
+.pagination-item {
+min-width: 60px;
+height: 60px;
+box-sizing: border-box;
+}
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -1051,10 +1060,7 @@ body {
   line-height: 36px;
   text-decoration: none;
   color: #ffffff;
-  width: 60px;
-  height: 60px;
   background-color: #82B3D3;
-  box-sizing: border-box;
   display: block;
   border-radius: 4px;
   padding: 12px 20px;
@@ -1064,7 +1070,6 @@ body {
 .grey-button {
   background-color: #F2F2F2;
   color: #000000;
-  border-radius: 4px;
 }
 
 .hotel-in-page {
@@ -1279,7 +1284,7 @@ select:disabled {
   border-color: rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.3);
-  background-image: url("../images-sedona/catalog-images/select-grey.svg");
+  background-image: url("../images/catalog-images/select-grey.svg");
 }
 
 /*ссылка на отель*/
@@ -1343,6 +1348,7 @@ select:disabled {
   height: 100%;
   z-index: 2;
   background-color: rgba(242, 242, 242, 0.8);
+  display: none;
 }
 
 .appoinment {
@@ -1475,7 +1481,7 @@ select:disabled {
 }
 
 .field-date {
-  background-image: url("../images-sedona/calendar.svg");
+  background-image: url("../images/calendar.svg");
   width: 420px;
   height: 50px;
   border-radius: 4px;
