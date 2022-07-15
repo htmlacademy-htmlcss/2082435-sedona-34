@@ -847,7 +847,7 @@ body {
 }
 
 .select-control-hotels {
-  margin: 0 75px 0 0;
+  margin: 0 78px 0 0;
   min-width: 290px;
 }
 
@@ -1348,7 +1348,7 @@ body {
   height: 100%;
   z-index: 2;
   background-color: rgba(242, 242, 242, 0.8);
-  
+  display: none;
 }
 
 .appoinment {
@@ -1426,9 +1426,10 @@ body {
 
 .field-group {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 7px 0;
+  margin: 0 0 11px 0;
 }
 
 .form-label {
@@ -1463,8 +1464,8 @@ body {
 }
 
 .appoinment-text {
-  margin: 0 0 11px 0;
-  padding: 0;
+  margin: 0 0 0 155px;
+  padding: 7px 0 0 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1472,12 +1473,10 @@ body {
 
 .appoinment-text-error {
   color: #FF5757;
-  margin-left: 13px;
 }
 
 .appoinment-text-done {
   color: #333333;
-  margin-left: 64px;
 }
 
 .field-date {
@@ -1705,7 +1704,7 @@ body {
 .range-input::-webkit-inner-spin-button,
 .field-adults-children::-webkit-outer-spin-button,
 .field-adults-children::-webkit-inner-spin-button {
--moz-appearance: none;
+appearance: none;
 margin: 0;
 }
 .select {
