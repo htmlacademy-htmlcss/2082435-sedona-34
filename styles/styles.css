@@ -1705,6 +1705,9 @@ body {
 .range-input::-webkit-inner-spin-button,
 .field-adults-children::-webkit-outer-spin-button,
 .field-adults-children::-webkit-inner-spin-button {
-appearance: none;
+-moz-appearance: none;
 margin: 0;
+}
+.select {
+  -moz-appearance: none;
 }
